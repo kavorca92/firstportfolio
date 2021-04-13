@@ -21,7 +21,7 @@ class Carousel extends React.Component {
                     title: 'This page',
                     subTitle: 'Made with React',
                     imgSrc: reactpic,
-                    link: 'https://youtube.com/bandykorbv',
+                    link: 'https://reactjs.org/',
                     selected: false
 
                 },
@@ -35,10 +35,10 @@ class Carousel extends React.Component {
                 },
                 {
                     id: 2,
-                    title: 'Second card',
-                    subTitle: 'filler text',
+                    title: 'Current project',
+                    subTitle: 'App that looks up hits on news-sites',
                     imgSrc: sunset,
-                    link: 'https://unsplash.com',
+                    link: 'https://github.com/Viktor-Hultman/fe20tp2_bev_9',
                     selected: false
                     
                 }
