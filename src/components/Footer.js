@@ -2,6 +2,8 @@ import React from 'react';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
+
 function Footer() {
 
     return(
@@ -11,7 +13,7 @@ function Footer() {
                     <Col className="p-0" md="{3}" sm="{12}">
                         Nisse Lindqvist
                     </Col>
-                    <Col classname="p-0 d-flex justify-content-end" md={3}>
+                    <Col className="p-0 d-flex justify-content-end" md={3}>
                         Made with React
                     </Col>
 

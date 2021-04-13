@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 
 import github from '../assets/images/github.png';
 import sunset from '../assets/images/sunset.jpg';
-import MN_Original from '../assets/images/MN_Original.jpg';
+import reactpic from '../assets/images/reactpic.png';
 
 
 class Carousel extends React.Component {
@@ -20,7 +20,7 @@ class Carousel extends React.Component {
                     id: 0,
                     title: 'This page',
                     subTitle: 'Made with React',
-                    imgSrc: MN_Original,
+                    imgSrc: reactpic,
                     link: 'https://youtube.com/bandykorbv',
                     selected: false
 
@@ -28,7 +28,7 @@ class Carousel extends React.Component {
                 {
                     id: 1,
                     title: 'Github',
-                    subTitle: 'Projects ive worked on',
+                    subTitle: 'My github page!',
                     imgSrc:github,
                     link:'https://github.com/kavorca92',
                     selected: false

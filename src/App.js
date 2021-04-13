@@ -5,10 +5,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
+
 import Footer from './components/Footer.js';
 import HomePage from './pages/HomePage.js';
 import AboutPage from './pages/AboutPage.js';
 import ContactPage from './pages/Contactpage.js';
+import WeatherPage from "./pages/WeatherPage.js";
 
 
 
@@ -22,18 +24,22 @@ constructor(props) {
     headerLinks: [
       { title: 'Home', path :'/'},
       { title: 'About', path :'/about'},
-      { title: 'Contact', path :'/contact'}
+      { title: 'Contact', path :'/contact'},
+      { title: 'Weather', path :'/weather'}
     ],
     home: {
-      title: 'Yeah im gaming',
-      subTitle: 'Gaming is believing',
+      title: 'Nisses Portfolio',
+      subTitle: 'Learning javascript and React!',
       text: 'See my projects below!'
     },
     about: {
       title: 'About me'
     },
     contact: {
-      title: 'Hit me up fam'
+      title: 'Where to find me'
+    },
+    weather: {
+      title: 'Weatherapp'
     }
   }
 }
@@ -52,12 +58,14 @@ constructor(props) {
                 <Link className='nav-link' to="/">Home</Link>
                 <Link className='nav-link' to="/about">About</Link>
                 <Link className='nav-link' to="/contact">Contact</Link>
+                <Link className='nav-link' to="/weather">Weather</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           <Route path="/about" render={() => <AboutPage title={this.state.about.title}/>} />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          <Route path="/weather" render={() => <WeatherPage title={this.state.weather.title} />} />
           <Footer/>
         </Container>
 
