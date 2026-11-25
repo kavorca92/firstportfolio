@@ -6,11 +6,11 @@ import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
 
-import Footer from './components/Footer.js';
-import HomePage from './pages/HomePage.js';
-import AboutPage from './pages/AboutPage.js';
-import ContactPage from './pages/Contactpage.js';
-import WeatherPage from "./pages/WeatherPage.js";
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/Contactpage';
+import WeatherPage from "./pages/WeatherPage";
 
 
 
